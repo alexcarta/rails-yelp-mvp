@@ -1,0 +1,11 @@
+<div class="d-flex justify-content-center mt-5">
+  <div style="width: 18rem">
+    <%= simple_form_for(@restaurant) do |f| %>
+      <%= f.input :name %>
+      <%= f.input :address %>
+      <%= f.input :category %>
+      <%= f.input :phone_number %>
+      <%= f.submit "Submit restaurant", class: "btn btn-primary mt-5"  %>
+    <% end %>
+  </div>
+</div>
